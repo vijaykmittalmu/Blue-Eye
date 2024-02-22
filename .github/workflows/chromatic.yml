@@ -1,6 +1,6 @@
 
 # Workflow name
-name: 'Chromatic Deployment'
+name: 'Blue-Eye storybook Deployment'
 
 # Event for the workflow
 on: push
