@@ -18,7 +18,8 @@
   },
   "scripts": {
     "start": "storybook dev -p 6006",
-    "build": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_b1bdd00f61330c5"
   },
   "eslintConfig": {
     "extends": [
