@@ -1,0 +1,150 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+import { MButton } from './MButton';
+import CameraIcon from '@mui/icons-material/Camera';
+
+<Meta 
+  title="Components/Button"
+  argTypes = {{
+    label: { 
+      description: 'sgsgdjsgsj jhsgdhjgs',
+      control: { type: 'text'},
+    }
+  }}
+  component = { MButton }
+/>
+
+{ /* Checkbox.mdx */ }
+
+
+# Button
+```
+```
+
+### Variant Button
+
+export const VariantButton = (args) => <MButton { ...args } />
+
+<Canvas>
+  <Story 
+    name="TextButton"
+    args={{
+      variant: "text",
+      label:'Button'
+    }}>
+    {VariantButton.bind({})}
+  </Story>
+  <Story 
+    name="OutlinedButton"
+    args={{
+      variant: "outlined",
+      label:'Button'
+    }}>
+    {VariantButton.bind({})}
+  </Story>
+  <Story 
+    name="ContainedButton"
+    args={{
+      variant: "contained",
+      label:'Button'
+    }}>
+    {VariantButton.bind({})}
+  </Story>
+</Canvas>
+
+
+### Color Button
+
+export const ColorButton = (args) => <MButton { ...args } />
+
+<Canvas>
+  <Story 
+    name="Primary"
+    args={{
+      variant: "contained",
+      label:'Button',
+      color: 'primary'
+    }}>
+    {ColorButton.bind({})}
+  </Story>
+  <Story 
+    name="Secondary"
+    args={{
+      variant: "contained",
+      label:'Button',
+      color: 'secondary'
+    }}>
+    {ColorButton.bind({})}
+  </Story>
+  <Story 
+    name="Danger"
+    args={{
+      variant: "contained",
+      label:'Button',
+      color: 'error'
+    }}>
+    {ColorButton.bind({})}
+  </Story>
+  <Story 
+    name="Warning"
+    args={{
+      variant: "contained",
+      label:'Button',
+      color: 'warning'
+    }}>
+    {ColorButton.bind({})}
+  </Story>
+  <Story 
+    name="Success"
+    args={{
+      variant: "contained",
+      label:'Button',
+      color: 'success'
+    }}>
+    {ColorButton.bind({})}
+  </Story>
+  <Story 
+    name="Info"
+    args={{
+      variant: "contained",
+      label:'Button',
+      color: 'info'
+    }}>
+    {ColorButton.bind({})}
+  </Story>
+</Canvas>
+
+### Sizes
+
+export const DifferentSizesButton = (args) => <MButton { ...args } />
+
+<Canvas>
+  <Story 
+    name="Small"
+    args={{
+      label:"Small",
+      size:'small',
+      variant: 'outlined'
+    }}>
+    {DifferentSizesButton.bind({})}
+  </Story>
+  <Story 
+    name="Medium"
+    args={{
+      label:"Medium",
+      size:'medium',
+      variant: 'outlined'
+    }}>
+    {DifferentSizesButton.bind({})}
+  </Story>
+  <Story 
+    name="Large"
+    args={{
+      label:"Large",
+      size:'large',
+      variant: 'outlined'
+    }}>
+    {DifferentSizesButton.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable of="TextButton"/>
